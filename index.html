@@ -224,7 +224,20 @@ section { position:relative; z-index:1; }
   font-size:clamp(2rem,4vw,3rem); font-weight:800;
   line-height:1.1; margin-bottom:3rem;
 }
-
+.project-card,
+.btn-primary,
+.btn-outline,
+a {
+  position: relative;
+  z-index: 10;
+}
+.project-card::after {
+  pointer-events: none;
+}
+#cursor,
+#cursor-ring {
+  pointer-events: none;
+}
 /* ── ABOUT ── */
 #about { background:var(--bg2); }
 .about-grid {
@@ -234,7 +247,7 @@ section { position:relative; z-index:1; }
   display:flex; justify-content:center;
 }
 .avatar {
-  width:100%; max-width:350px; height:480px; border-radius:12px;
+  width:100%; max-width:360px; height:480px; border-radius:12px;
   background: linear-gradient(135deg, var(--surface) 0%, var(--surface2) 100%);
   border:1px solid rgba(59,130,246,0.2);
   display:flex; flex-direction:column; align-items:center; justify-content:center;
@@ -401,17 +414,27 @@ footer {
 .reveal-delay-5 { transition-delay:0.5s; }
 
 /* ───────── MOBILE RESPONSIVE FIX ───────── */
+/* ───────── MOBILE RESPONSIVE FIX ───────── */
 @media (max-width: 768px) {
 
   body {
     cursor: auto;
     overflow-x: hidden;
+    touch-action: manipulation;
   }
 
-  /* Hide custom cursor on mobile */
+  /* Hide custom cursor */
   #cursor,
   #cursor-ring {
-    display: none;
+    display: none !important;
+  }
+
+  #stars-canvas {
+    pointer-events: none;
+  }
+
+  a, button {
+    touch-action: manipulation;
   }
 
   /* Navbar */
@@ -471,21 +494,11 @@ footer {
     gap: 2rem;
   }
 
-  .avatar-wrap {
-    justify-content: center;
-  }
-
   .avatar {
     width: 100%;
-    max-width: 320px;
+    max-width: 330px;
     height: auto;
     aspect-ratio: 350 / 480;
-  }
-
-  .profile-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
   }
 
   /* Skills */
@@ -508,18 +521,13 @@ footer {
     gap: 2rem;
   }
 
-  .social-link {
-    word-break: break-word;
-  }
-
-  /* Footer */
   footer {
     flex-direction: column;
     gap: 0.75rem;
     text-align: center;
     padding: 1.5rem 1rem;
   }
-} 
+}
 </style>
 </head>
 <body>
@@ -649,6 +657,8 @@ footer {
           <span class="skill-tag">Tkinter</span>
           <span class="skill-tag">NewsAPI</span>
           <span class="skill-tag">REST APIs</span>
+          <span class="skill-tag">HTML</span>
+          <span class="skill-tag">CSS</span>
         </div>
       </div>
       <div class="skill-card reveal reveal-delay-5">
@@ -740,6 +750,29 @@ footer {
           <span class="stack-tag">Python</span>
           <span class="stack-tag">Tkinter</span>
           <span class="stack-tag">JSON</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-5">
+        <div class="project-num">07 / WEB APP</div>
+        <div class="project-title">Smart ATM Simulation System</div>
+        <div class="project-desc">
+          Interactive ATM simulation with full banking logic including PIN authentication, deposit/withdraw system,
+          balance tracking, and transaction history with persistent LocalStorage. Built with a clean, responsive dashboard and real-time updates.
+        </div>
+
+        <div class="project-stack">
+          <span class="stack-tag">JavaScript</span>
+          <span class="stack-tag">HTML</span>
+          <span class="stack-tag">CSS</span>
+          <span class="stack-tag">LocalStorage</span>
+        </div>
+
+        <!-- LIVE DEMO BUTTON -->
+        <div style="margin-top: 1.2rem;">
+          <a href="https://shubaib-uddin.github.io/SH-ATM/" target="_blank" class="btn-primary">
+            Live Demo
+          </a>
         </div>
       </div>
 
