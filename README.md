@@ -1,4 +1,4 @@
-# 🚀 Shubaib Portfolio
+# Shubaib Portfolio
 
 Welcome to my personal portfolio website!
 
@@ -12,7 +12,7 @@ This project showcases my skills, projects, and journey as an aspiring **AI Engi
 
 ---
 
-## 📌 About This Project
+## About This Project
 
 This portfolio is built to represent my work, skills, and projects in a clean and modern UI.  
 It highlights my journey in:
@@ -24,7 +24,7 @@ It highlights my journey in:
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - HTML5  
 - CSS3  
@@ -34,7 +34,7 @@ It highlights my journey in:
 
 ---
 
-## ✨ Features
+## Features
 
 - Modern futuristic UI design  
 - Smooth animations and transitions  
@@ -45,7 +45,7 @@ It highlights my journey in:
 
 ---
 
-## 📂 Projects Included
+## Projects Included
 
 - AI Essay Evaluator (LangGraph Multi-Agent System)
 - Agentic Blog Writing System
@@ -57,7 +57,7 @@ It highlights my journey in:
 
 ---
 
-## 🎯 Purpose
+## Purpose
 
 This portfolio was created to:
 
@@ -68,7 +68,7 @@ This portfolio was created to:
 
 ---
 
-## 📬 Contact
+## Contact
 
 - Email: shubaibcreative@gmail.com 
 - LinkedIn: https://linkedin.com/in/shubaib-uddin 
@@ -76,6 +76,6 @@ This portfolio was created to:
 
 ---
 
-## ⭐ Feedback
+## Feedback
 
 If you like this project, feel free to star the repo or suggest improvements!
