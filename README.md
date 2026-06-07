@@ -67,7 +67,8 @@ It highlights my journey in:
 
 | Certificate | Issuer | Credential ID | View |
 |-------------|--------|---------------|------|
-| Introduction to Model Context Protocol | Anthropic | d23dhm7rdkww-1780777923 | [📄 View Certificate](Certificate_of_Intro_to_MCP.pdf) |
+| Introduction to Model Context Protocol | Anthropic | d23dhm7rdkww | [📄 View Certificate](Certificate_of_Intro_to_MCP.pdf) |
+| Claude Code 101 | Anthropic | eucpue5k6owp | [📄 View Certificate](Claude_code_basics.pdf) |
 
 ---
 
